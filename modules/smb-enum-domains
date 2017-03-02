@@ -1,0 +1,14 @@
+echo "
+        ..::|[ Smb Enumeration User ]|::..
+"
+echo "\n\n"
+echo -n "
+[#] Masukan Target : "
+read trgt
+echo -n "[#] Masukan Port : "
+read port
+
+nmap --script smb-enum-domains.nse -p $port $trgt
+
+cd /blackjack/
+sh droid

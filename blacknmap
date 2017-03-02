@@ -1,0 +1,122 @@
+#!/bin/sh
+clear
+echo "\033[92;1m
+
+---  -   ---   --- -  -    -   - -   - ---  ---
+|  | |      | |    | /     |\  | |\ /|    | |  |
+---  |    --- |    |<      | \ | | | |  --- ---
+|  | |   |  | |    | \     |  \| | - | |  | |
+---  ---- ---  --- -  -    -   - -   -  --- -"
+echo "\033[32;1m
+ _____________________________________________
+|                                             |
+| Author  : Arfian Dicky Firmansyah           |
+| Version : 1.0.0                             |
+| My FB   : http://m.facebook.com/dicky.405.  |
+| My Team : AndroSec Team                     |
+| Grup fb : AnDRoiD Security Hacking          |
+|_____________________________________________|\033[0m"
+echo "
+
+   \033[32;1m  [+] \033[31;1mDaftar Tools\033[32;1m [+]\033[30m"
+
+echo "\n"
+echo -n "
+   \033[32;1m[\033[31;1m01\033[32;1m]\033[37;1m VNC Brute
+   \033[32;1m[\033[31;1m02\033[32;1m]\033[37;1m URL Snarf
+   \033[32;1m[\033[31;1m03\033[32;1m]\033[37;1m XAMPP Brute
+   \033[32;1m[\033[31;1m04\033[32;1m]\033[37;1m Whois
+   \033[32;1m[\033[31;1m05\033[32;1m]\033[37;1m Xdmcp Discover
+   \033[32;1m[\033[31;1m06\033[32;1m]\033[37;1m Telnet Encryptio
+   \033[32;1m[\033[31;1m07\033[32;1m]\033[37;1m SVN Brute
+   \033[32;1m[\033[31;1m08\033[32;1m]\033[37;1m SSL Enumeration Cipher
+   \033[32;1m[\033[31;1m09\033[32;1m]\033[37;1m SSL Heartbleed
+   \033[32;1m[\033[31;1m10\033[32;1m]\033[37;1m Socks Brute
+   \033[32;1m[\033[31;1m11\033[32;1m]\033[37;1m SMTP Brute
+   \033[32;1m[\033[31;1m12\033[32;1m]\033[37;1m SMTP Flooding
+   \033[32;1m[\033[31;1m13\033[32;1m]\033[37;1m SMB Enumeration User
+   \033[32;1m[\033[31;1m14\033[32;1m]\033[37;1m SMB Enumeration Domains
+
+
+
+\033[32;1m[\033[31;1m#\033[32;1m]\033[37;1m Bl4ck@NMap : "
+read bj
+cd modules
+
+if [ $bj = 01 ] || [ $bj = 1 ]
+then
+clear
+sh vnc-brute
+
+elif [ $bj = 02 ] || [ $bj = 2 ]
+then
+clear
+sh url-snarf
+
+elif [ $bj = 03 ] || [ $bj = 3 ]
+then
+clear
+sh xampp
+
+elif [ $bj = 04 ] || [ $bj = 4 ]
+then
+clear
+sh whois
+
+elif [ $bj = 05 ] || [ $bj = 5 ]
+then
+clear
+sh xdmcp-discover
+
+elif [ $bj = 06 ] || [ $bj = 6 ]
+then
+clear
+sh telnet-enc
+
+elif [ $bj = 07 ] || [ $bj = 7 ]
+then
+clear
+sh svn-brute
+
+elif [ $bj = 08 ] || [ $bj = 8 ]
+then
+clear
+sh ssl-enum-cipher
+
+elif [ $bj = 09 ] || [ $bj = 9 ]
+then
+clear
+sh ssl-heartbleed
+
+elif [ $bj = 10 ]
+then
+clear
+sh socks-brute
+
+elif [ $bj = 11 ]
+then
+clear
+sh smtp-brute
+
+elif [ $bj = 12 ]
+then
+clear
+sh smb-flood
+
+elif [ $bj = 13 ]
+then
+clear
+sh smb-enum-user
+
+elif [ $bj = 14 ]
+then
+clear
+sh smb-enum-domains
+
+else
+clear
+echo "\033[32;1m[\033[31;1m#\033[32;1m]\033[37;1m Salah Command Mhanxx..."
+sleep 1
+cd ../
+sh $0
+fi

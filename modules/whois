@@ -1,0 +1,11 @@
+echo "\033[32;1m
+       ..::|[ \033[31;1mNMap Whois Domain\033[32;1m ]|::.."
+echo "\n\n"
+echo -n "
+\033[32;1m[\033[31;1m#\033[32;1m]\033[37;1m Masukan Target : "
+read trgt
+
+nmap --script whois-domain.nse $trgt
+
+cd /blackjack/
+sh droid

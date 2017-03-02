@@ -1,0 +1,11 @@
+echo "\033[32;1m
+       ..::|[ \033[31;1mNMap telnet Encryptio\033[32;1m ]|::.."
+echo "\n\n"
+echo -n "
+\033[32;1m[\033[31;1m#\033[32;1m]\033[37;1m Masukan Ip Target : "
+read trgt
+
+nmap -p 23 $trgt --script telnet-encryption
+
+cd /blackjack/
+sh droid

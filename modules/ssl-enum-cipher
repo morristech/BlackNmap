@@ -1,0 +1,13 @@
+echo "\033[32;1m
+         ..::|[ \033[31;1mSSL Enumeration Cipher \033[32;1m]|::.."
+echo "\n\n"
+echo -n "
+\033[32;1m[\033[31;1m#\033[32;1m]\033[37;1m Masukan Target : "
+read fak
+echo -n "\033[32;1m[\033[31;1m#\033[32;1m]\033[37;1m Masukan Port : "
+read fuk
+
+nmap --script ssl-enum-ciphers -p $fuk $fak
+
+cd /blackjack/
+sh droid
